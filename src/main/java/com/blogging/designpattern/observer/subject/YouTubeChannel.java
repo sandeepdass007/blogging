@@ -30,10 +30,10 @@ public class YouTubeChannel {
 	}
 	
 	/**
-	 * Hypothetical representation of channel subscription
+	 * Hypothetical representation of adding users
 	 * @param youTubeUser
 	 */
-	public void subscribeChannel(YouTubeUser youTubeUser) {
+	public void addUser(YouTubeUser youTubeUser) {
 		subscribedUsers.add(youTubeUser);
 	}
 	
@@ -53,5 +53,9 @@ public class YouTubeChannel {
 				}
 			}).start();
 		});
+	}
+
+	public void removeUser(User user) {
+		subscribedUsers.remove(user);
 	}
 }

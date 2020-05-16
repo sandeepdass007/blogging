@@ -20,11 +20,11 @@ public class ObserverDemo {
 		YouTubeUser user3 = new User("Thomas");
 		YouTubeUser user4 = new User("User3829");
 		
-		channel1.subscribeChannel(user1);
-		channel1.subscribeChannel(user2);
-		channel1.subscribeChannel(user3);
+		user1.subscribeChannel(channel1);
+		user2.subscribeChannel(channel1);
+		user3.subscribeChannel(channel1);
 		
-		channel2.subscribeChannel(user4);
+		user4.subscribeChannel(channel2);
 		
 		channel1.addNewVideo("What is Observer Design Pattern");
 		channel2.addNewVideo("Budget 2020");
