@@ -12,10 +12,17 @@ import com.blogging.designpattern.observer.user.User;
  *
  */
 public class YouTubeChannel {
+	// Using set to have unique set of YouTube users
 	private Set<YouTubeUser> subscribedUsers = new HashSet<YouTubeUser>();
-	private String channelName;
 	
-	public YouTubeChannel(String channelName) {
+	// Name of channel
+	private String channelName; 
+	
+	/**
+	 * Create a YouTube channel
+	 * @param channelName
+	 */
+	public YouTubeChannel(String channelName) {    
 		super();
 		this.channelName = channelName;
 	}
@@ -24,7 +31,7 @@ public class YouTubeChannel {
 	 * Hypothetical representation of new video upload to the channel
 	 * @param videoName
 	 */
-	public void addNewVideo(String videoName) {
+	public void addNewVideo(String videoName) {   
 		System.out.println("New Video Added: " + videoName);
 		notifyAllSubscribers(videoName);
 	}
@@ -33,7 +40,7 @@ public class YouTubeChannel {
 	 * Hypothetical representation of adding users
 	 * @param youTubeUser
 	 */
-	public void addUser(YouTubeUser youTubeUser) {
+	public void addUser(YouTubeUser youTubeUser) {  
 		subscribedUsers.add(youTubeUser);
 	}
 	
@@ -41,7 +48,8 @@ public class YouTubeChannel {
 	 * Notifying all the subscribed users
 	 * @param videoName
 	 */
-	private void notifyAllSubscribers(String videoName) {
+	private void notifyAllSubscribers(String videoName) {  
+		// Iterate over each subscribed user
 		subscribedUsers.forEach(subscribedUser -> {
 			// failure in notifying one user should not impact others
 			new Thread(() -> {
@@ -55,7 +63,11 @@ public class YouTubeChannel {
 		});
 	}
 
-	public void removeUser(User user) {
+	/**
+	 * function to remove user
+	 * @param user
+	 */
+	public void removeUser(User user) {   
 		subscribedUsers.remove(user);
 	}
 }

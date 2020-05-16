@@ -9,29 +9,47 @@ import com.blogging.designpattern.observer.subject.YouTubeChannel;
  *
  */
 public class User implements YouTubeUser {
-	private String name;
+	// name of the user
+	private String name; 
 
-	public String getName() {
+	/**
+	 * returns name of the user
+	 * @return name
+	 */
+	public String getName() {   
 		return name;
 	}
 
-	public User(String name) {
+	/**
+	 * create user with parameterized name
+	 * @param name
+	 */
+	public User(String name) {   
 		super();
 		this.name = name;
 	}
 
+	/**
+	 * This method is invoked by {@link YouTubeChannel} to notify when new video is uploaded.
+	 */
 	@Override
-	public void notifyUser(String channelName, String videoName) {
+	public void notifyUser(String channelName, String videoName) {   
 		System.out.println(String.format("New video [%s] is uploaded by channel: [%s]", videoName, channelName));
 	}
 
+	/**
+	 * Subscribe a channel by the user
+	 */
 	@Override
-	public void subscribeChannel(YouTubeChannel youTubeChannel) {
+	public void subscribeChannel(YouTubeChannel youTubeChannel) {   
 		youTubeChannel.addUser(this);
 	}
 
+	/**
+	 * Unsubscribe a channel by the user
+	 */
 	@Override
-	public void unsubscribeChannel(YouTubeChannel youTubeChannel) {
+	public void unsubscribeChannel(YouTubeChannel youTubeChannel) {  
 		youTubeChannel.removeUser(this);
 	}
 }
