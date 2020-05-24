@@ -8,7 +8,7 @@ package com.blogging.extendsimplements;
  */
 public class Male extends HumanBeing implements HumanCapabilities{
 	
-	 //name of the Male
+	//name of the Male
 	public String name;
 	
 	/**
