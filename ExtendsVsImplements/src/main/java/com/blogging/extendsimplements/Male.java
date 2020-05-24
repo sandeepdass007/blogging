@@ -9,12 +9,12 @@ package com.blogging.extendsimplements;
 public class Male extends HumanBeing implements HumanCapabilities{
 	
 	 //name of the Male
-     public String name;
-      
-     /**
- 	 * Constructing a Male
- 	 * @param name
- 	 */
+	public String name;
+	
+	/**
+	 * Constructing a Male
+	 * @param name
+	 */
 	public Male(String name) {
 		super();
 		this.name = name;
@@ -71,6 +71,5 @@ public class Male extends HumanBeing implements HumanCapabilities{
 		builder.append(String.format("Eyes color is %s \n", getEyesColor()));
 		builder.append(String.format("Ears size is %d cm \n", getEarsSize()));
 		return builder.toString();
-        
-    }
+	}
 }

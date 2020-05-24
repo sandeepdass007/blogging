@@ -20,9 +20,9 @@ public class HumanBeing {
 	// Size of ears
 	private int earsSize;
 
-    /* 
-     * Setters 
-     * */
+	/* 
+	 * Setters 
+	 * */
 	public void setNoseSize(int noseSize) {
 		this.noseSize = noseSize;
 	}
