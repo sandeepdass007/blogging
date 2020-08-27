@@ -17,6 +17,7 @@ public class QueueMainClass {
 		queue.enqueue("Nikita");
 		queue.dequeue();
 		queue.dequeue();
+		System.out.println("Peeking First: " + queue.peek());
 		for(int offset = 0; offset < queue.getSize(); offset++) {
 			System.out.println(queue.getItem(offset));
 		}

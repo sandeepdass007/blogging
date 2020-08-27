@@ -31,6 +31,13 @@ public class Queue<T> {
 		return list.size();
 	}
 	
+	public T peek() {
+		if(isEmpty()) {
+			throw new RuntimeException("Underflow!");
+		}
+		return list.peekFirst();
+	}
+	
 	public T getItem(int index) {
 		if(isEmpty()) {
 			throw new RuntimeException("Underflow!");
