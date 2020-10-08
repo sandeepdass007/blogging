@@ -11,11 +11,9 @@ public class SelectionSort {
 		}
 		
 		for(int sortedIndex = 0; sortedIndex < data.length; sortedIndex++) {
-			int smallestNumber = data[sortedIndex];
 			int swapTargetIndex = sortedIndex;
 			for(int position = sortedIndex; position < data.length; position++) {
-				if(data[position] < smallestNumber) {
-					smallestNumber = data[position];
+				if(data[position] < data[sortedIndex]) {
 					swapTargetIndex = position;
 				}
 			}
