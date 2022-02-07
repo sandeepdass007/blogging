@@ -10,7 +10,7 @@ public class EffectivelyFinalDemo {
 		int evenNumbersCount = 0;
 		numbers.forEach(number -> {
 			if(number % 2 == 0) {
-				evenNumbersCount++; // compile time error
+//				evenNumbersCount++; // compile time error
 			}
 		});
 	}
