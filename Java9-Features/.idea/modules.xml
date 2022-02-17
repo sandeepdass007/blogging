@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/collection-factory-methods/collection-factory-methods.iml" filepath="$PROJECT_DIR$/collection-factory-methods/collection-factory-methods.iml" />
       <module fileurl="file://$PROJECT_DIR$/interface-apis/interface-apis.iml" filepath="$PROJECT_DIR$/interface-apis/interface-apis.iml" />
       <module fileurl="file://$PROJECT_DIR$/stream-apis/stream-apis.iml" filepath="$PROJECT_DIR$/stream-apis/stream-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try-with-resource/try-with-resource.iml" filepath="$PROJECT_DIR$/try-with-resource/try-with-resource.iml" />
     </modules>
   </component>
 </project>
