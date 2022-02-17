@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java9-Features.iml" filepath="$PROJECT_DIR$/Java9-Features.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection-factory-methods/collection-factory-methods.iml" filepath="$PROJECT_DIR$/collection-factory-methods/collection-factory-methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diamond-operator/diamond-operator.iml" filepath="$PROJECT_DIR$/diamond-operator/diamond-operator.iml" />
       <module fileurl="file://$PROJECT_DIR$/interface-apis/interface-apis.iml" filepath="$PROJECT_DIR$/interface-apis/interface-apis.iml" />
       <module fileurl="file://$PROJECT_DIR$/stream-apis/stream-apis.iml" filepath="$PROJECT_DIR$/stream-apis/stream-apis.iml" />
       <module fileurl="file://$PROJECT_DIR$/try-with-resource/try-with-resource.iml" filepath="$PROJECT_DIR$/try-with-resource/try-with-resource.iml" />
