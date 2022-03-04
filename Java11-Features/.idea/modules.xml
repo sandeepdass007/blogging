@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java11-Features.iml" filepath="$PROJECT_DIR$/Java11-Features.iml" />
       <module fileurl="file://$PROJECT_DIR$/files-apis/files-apis.iml" filepath="$PROJECT_DIR$/files-apis/files-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miscellaneous/miscellaneous.iml" filepath="$PROJECT_DIR$/miscellaneous/miscellaneous.iml" />
       <module fileurl="file://$PROJECT_DIR$/string-apis/string-apis.iml" filepath="$PROJECT_DIR$/string-apis/string-apis.iml" />
     </modules>
   </component>
