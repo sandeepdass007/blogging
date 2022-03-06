@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java12-Features.iml" filepath="$PROJECT_DIR$/Java12-Features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collectors-apis/collectors-apis.iml" filepath="$PROJECT_DIR$/collectors-apis/collectors-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compact-number-format/compact-number-format.iml" filepath="$PROJECT_DIR$/compact-number-format/compact-number-format.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-apis/file-apis.iml" filepath="$PROJECT_DIR$/file-apis/file-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pattern-matching/pattern-matching.iml" filepath="$PROJECT_DIR$/pattern-matching/pattern-matching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/string-apis/string-apis.iml" filepath="$PROJECT_DIR$/string-apis/string-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switch-expressions/switch-expressions.iml" filepath="$PROJECT_DIR$/switch-expressions/switch-expressions.iml" />
+    </modules>
+  </component>
+</project>
