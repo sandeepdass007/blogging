@@ -1,2 +1,2 @@
 # blogging
-All programs related to my personal blog -> https://sandeepdass003.wordpress.com
+All programs related to my personal blog -> https://simplyengineers.in/
