@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.blogging'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+def junitVersion = "5.9.2"
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+
+}
+
+test {
+    useJUnitPlatform()
+}
