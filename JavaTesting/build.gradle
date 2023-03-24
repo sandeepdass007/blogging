@@ -8,12 +8,10 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
-def junitVersion = "5.9.2"
+def junitVersion = "4.13.2"
 
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
-
+    testImplementation group: 'junit', name: 'junit', version: "${junitVersion}"
 }
 
 test {
