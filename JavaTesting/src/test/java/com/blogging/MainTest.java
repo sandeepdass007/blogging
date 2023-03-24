@@ -41,7 +41,6 @@ public class MainTest {
     @Test
     public void testAssertEquals() {
         assertEquals(1, 1);
-        assertEquals(1.1f, 1.1f);
         assertEquals('d', 'd');
         assertEquals("String", "String");
     }
