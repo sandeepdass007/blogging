@@ -1,75 +1,19 @@
 package com.blogging;
 
-import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
 public class MainTest {
 
-//    @Test
-//    public void testFail() {
-//        Assertions.fail("Custom Failure");
-//    }
-
-    @Test
-    public void testAssertTrue() {
-        assertTrue(true);
-        assertTrue(1 == 1);
-        assertTrue("string".equals("string"));
-    }
-
-    @Test
-    public void testAssertFalse() {
-        assertFalse(false);
-        assertFalse(1 == 2);
-        assertFalse("string".equals("String"));
-    }
-
-    @Test
-    public void testAssertNull() {
-        String string = null;
-        assertNull(null);
-        assertNull(string);
-    }
-
-    @Test
-    public void testAssertNotNull() {
-        String string = "string";
-        assertNotNull(string);
-    }
-
-    @Test
-    public void testAssertEquals() {
-        assertEquals(1, 1);
-        assertEquals('d', 'd');
-        assertEquals("String", "String");
-    }
-
-    @Test
-    public void testAssertNotEquals() {
-        assertNotEquals(1, 2);
-        assertNotEquals(1.1f, 1.2f);
-        assertNotEquals('d', 'b');
-        assertNotEquals("String", "string");
-    }
-
-    @Test
-    public void testAssertArrayEqual() {
-        assertArrayEquals(new int[] {1,2,3}, new int[] {1,2,3});
-        assertArrayEquals(new int[] {}, new int[] {});
-    }
-
-    @Test
-    public void testAssertSame() {
-        String string = "String";
-        String copyString = string;
-        assertSame(string, copyString);
-    }
-
-    @Test
-    public void testAssertNotSame() {
-        String string = "String";
-        String copyString = new String(string);
-        assertNotSame(string, copyString);
+    public static void main(String[] args) {
+        Result result = JUnitCore.runClasses(AssertionsTest.class);
+        List<Failure> failures = result.getFailures();
+        for(Failure failure : failures) {
+            System.err.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
     }
 }
