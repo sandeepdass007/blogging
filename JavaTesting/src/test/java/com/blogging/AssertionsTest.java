@@ -5,6 +5,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -20,6 +22,7 @@ public class AssertionsTest {
         assertTrue(true);
         assertTrue(1 == 1);
         assertTrue("string".equals("string"));
+
     }
 
     @Test
@@ -76,5 +79,10 @@ public class AssertionsTest {
         String string = "String";
         String copyString = new String(string);
         assertNotSame(string, copyString);
+    }
+
+    @Test(timeout = 500)
+    public void testTimeout() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
     }
 }
