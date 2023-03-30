@@ -1,7 +1,10 @@
 package com.blogging;
 
 import junit.framework.TestCase;
+import org.junit.FixMethodOrder;
+import org.junit.runners.MethodSorters;
 
+@FixMethodOrder(MethodSorters.JVM)
 public class CustomTestClass extends TestCase {
 
     @Override

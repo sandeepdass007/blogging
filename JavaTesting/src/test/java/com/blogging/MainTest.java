@@ -14,6 +14,23 @@ public class MainTest {
     public static void main(String[] args) {
         executeAssertionsTest();
         executeCustomTestClass();
+        executingTestSuite();
+        executeTestWithListener();
+    }
+
+    private static void executeTestWithListener() {
+        JUnitCore jUnitCore = new JUnitCore();
+        jUnitCore.addListener(new TestExecutionListener());
+        jUnitCore.run(AssertionsTest.class, CustomTestClass.class);
+    }
+
+    private static void executingTestSuite() {
+        Result result = JUnitCore.runClasses(com.blogging.TestSuite.class);
+        List<Failure> failures = result.getFailures();
+        for(Failure failure : failures) {
+            System.err.println(failure.toString());
+        }
+        System.out.println("TestSuite successful - " + result.wasSuccessful());
     }
 
     private static void executeCustomTestClass() {
